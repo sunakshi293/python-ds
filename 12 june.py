@@ -1,5 +1,4 @@
 #Question number 1
-print("***************************")
 name=input("Enter student names:")
 std=input("Enter student class:")
 section=input("Enter student setion:")
@@ -22,7 +21,7 @@ print("percentage scored-",av,"%")
 print("*********************************")
 a=int(input("Enter a number:"))
 b=int(input("Enter a number:"))
-c=int(input("Enter  a number:"))
+c=int(input("Enter a number:"))
 sum=a+b+c
 print("sum",sum)
 
@@ -41,7 +40,7 @@ print("Temperature in fahrenheit=",tempf)
 
 #Question number 5
 print("************************************")
-a=int(input("Entera number"))
+a=int(input("Enter a number"))
 b=int(input("Enter a number"))
 quotient=a//b
 remainder=a%b
