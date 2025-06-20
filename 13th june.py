@@ -84,7 +84,7 @@ print("sum from 0 to ",num,"=",sum)
 print("*****************************************")
 num=int(input("Enter a number:"))
 print("Even numbers are ")   
-for i in range(num+1)
+for i in range(num+1):
     if i%2==0:
         print(i,end="  ")
         
