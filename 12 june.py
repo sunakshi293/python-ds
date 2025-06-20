@@ -1,8 +1,8 @@
 #Question number 1
-print("***************************")
+print("**************************************")
 name=input("Enter student names:")
 std=input("Enter student class:")
-section=input("Enter student setion:")
+section=input("Enter student section:")
 english=int(input("Enter marks in ENGLISH:"))
 maths=int(input("Enter marks in MATHS:"))
 de=int(input("Enter marks in DE:"))
@@ -29,19 +29,19 @@ print("sum",sum)
 #Question number 3
 print("**********************************")
 a=int(input("Enter a number:"))
-print("Square=",a*a)
+print("Square= ",a*a)
 
 #Question number 4
 print("***********************************")
 temp=input("Enter the temperature in celsius-")
 tempc=float(temp)
 tempf=(tempc*(9/5))+32
-print("Temperature in celsius=",tempc)
-print("Temperature in fahrenheit=",tempf)
+print("Temperature in celsius= ",tempc)
+print("Temperature in fahrenheit= ",tempf)
 
 #Question number 5
 print("************************************")
-a=int(input("Entera number"))
+a=int(input("Enter a number"))
 b=int(input("Enter a number"))
 quotient=a//b
 remainder=a%b

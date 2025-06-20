@@ -1,7 +1,7 @@
 # Question number 1
 list1=["Hello","Dsuya","Hey","Here","Mukerian","hii"]
 result=[i for i in list1 if len(i)<=4]
-print("strings wuth less than fourlatters:" ,result)
+print("strings with less than four letters:" ,result)
 
 # Question number 2
 print("-----------------------------------")
