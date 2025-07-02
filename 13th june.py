@@ -84,9 +84,39 @@ print("sum from 0 to ",num,"=",sum)
 print("*****************************************")
 num=int(input("Enter a number:"))
 print("Even numbers are ")   
-for i in range(num+1)
+for i in range(num+1):
     if i%2==0:
         print(i,end="  ")
         
 # Question number 7
-print("**************************************")
+print("*******************************")
+num=int(input("Enter a number: "))
+op=input("Enter the operator (+ or -): ")
+if op=='+':
+    for i in range(num):
+        print(i,end=" ")
+elif op=="-":
+    for i in range(num,0,-1):
+        print(i,end=" ")
+else:
+    print("Wrong operator")
+
+# Question number 8
+print("*******************************") 
+num=int(input("Enter a number: "))
+for i in range(1,11):
+    print(num," x ",i," = ",num*i)
+
+# Question number 9
+print("*******************************")
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+# Question  number 10
+print("*******************************")
+n=int(input("Enter a number: "))
+print("Squares of ",n," natural numbers: ")
+for i in range(1,n+1):
+    print(i*i,end=" ")
