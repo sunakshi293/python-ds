@@ -36,20 +36,41 @@ st.set_page_config('APP')
 # st.audio('')
 
 
-with open('img-1.jpg','rb') as f:
-    data= f.read()
+# with open('Hp.png','rb') as f:
+#     data= f.read()
 
-img= base64.b64encode(data).decode()
+# img= base64.b64encode(data).decode()
 
-css=f"""
-    <style>
-    [data-testid="stAppViewContainer"]{{
-        background-image:url('data:image/png;base64,{img}');
-        background-size:cover
+# css=f"""
+#     <style>
+#     [data-testid="stAppViewContainer"]{{
+#         background-image:url('data:image/png;base64,{img}');
+#         background-size:cover
         
-    }}
-    </style>
-"""
-st.markdown(css, unsafe_allow_html=True)
+#     }}
+#     </style>
+# """
+# st.markdown(css, unsafe_allow_html=True)
 
 st.header("Helo")
+
+import os
+import base64
+
+file_path = os.path.join(os.getcwd(), 'Hp.png')  # Get absolute path
+with open(file_path, 'rb') as f:
+    data = f.read()
+
+img = base64.b64encode(data).decode()
+css = f"""
+<style>
+[data-testid="stAppViewContainer"] {{
+    background-image: url("data:image/png;base64,{img}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}}
+</style>
+"""
+import streamlit as st
+st.markdown(css, unsafe_allow_html=True)
